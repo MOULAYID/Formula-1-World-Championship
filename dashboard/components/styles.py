@@ -140,3 +140,14 @@ def inject_f1_custom_css():
     </style>
     """
     st.markdown(css, unsafe_allow_html=True)
+
+
+def render_f1_sidebar():
+    """Render unified F1 sidebar branding across all Streamlit pages."""
+    with st.sidebar:
+        st.image("https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg", width=120)
+        st.markdown("### 🏎️ **F1 Intelligence Nav**")
+        st.markdown("Select a page above to explore performance analytics.")
+        st.divider()
+        st.caption("Data Source: Kaggle F1 World Championship Dataset (1950–Present)")
+        st.caption("Built with Python, Scikit-Learn, Plotly & Streamlit")
