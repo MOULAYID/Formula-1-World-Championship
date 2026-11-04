@@ -1,12 +1,21 @@
 # 🏎️ Formula 1 Performance Intelligence Platform
 
+[Report a bug](https://github.com/MOULAYID/Formula-1-World-Championship/issues/new) · [Suggest an improvement](https://github.com/MOULAYID/Formula-1-World-Championship/issues/new) · [More projects](https://github.com/MOULAYID)
+
+[Quick start](#quick-start) · [Contributing](#contributing) · [Follow the project](#follow-the-project)
+
+![Formula-1-World-Championship dashboard preview](https://raw.githubusercontent.com/MOULAYID/MOULAYID/main/assets/previews/formula1.png)
+
+<sub>Dashboard capture from the profile’s existing preview assets; run the app locally to explore.</sub>
+
+
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-red.svg)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/dashboard-streamlit-FF4B4B.svg)](https://streamlit.io/)
 [![Plotly](https://img.shields.io/badge/interactive-plotly-3F4F75.svg)](https://plotly.com/)
 [![Scikit-Learn](https://img.shields.io/badge/ML-scikit--learn-F7931E.svg)](https://scikit-learn.org/)
 [![Spec Driven Development](https://img.shields.io/badge/methodology-SDD--Pro-blue.svg)](PROJECT_SPEC.md)
 
-An enterprise-grade, portfolio-quality **Formula 1 Performance Intelligence Platform** analyzing 70+ years of Formula 1 history (1950–Present). Built using **Spec Driven Development (SDD)**, modular Python data architecture, statistical modeling, machine learning algorithms, and a multi-page interactive Streamlit dashboard with F1 dark racing aesthetics.
+A portfolio **Formula 1 Performance Intelligence Platform** analyzing 70+ years of Formula 1 history (1950–Present). Built using **Spec Driven Development (SDD)**, modular Python data architecture, statistical modeling, machine learning algorithms, and a multi-page interactive Streamlit dashboard with F1 dark racing aesthetics.
 
 ---
 
@@ -69,7 +78,7 @@ Formula-1-World-Championship/
 │   ├── 03_statistical_modeling.ipynb    # ANOVA & Variance Decomposition
 │   └── 04_machine_learning.ipynb        # Model Training & Clustering
 ├── dashboard/                           # Streamlit Interactive Dashboard
-│   ├── app.py                           # Application Entrance
+│   ├── Overview.py                           # Application Entrance
 │   ├── components/                      # Styles, KPI cards, Chart routines
 │   └── pages/                           # 7 Interactive analytics pages
 └── reports/
@@ -78,26 +87,32 @@ Formula-1-World-Championship/
 
 ---
 
+<a id="quick-start"></a>
+
 ## 🚀 Quickstart & Installation Guide
 
 ### 1. Prerequisites
 Ensure Python 3.10+ is installed.
 
 ### 2. Virtual Environment Setup
+
 ```bash
+git clone https://github.com/MOULAYID/Formula-1-World-Championship.git
+cd Formula-1-World-Championship
 # Initialize virtual environment
 python -m venv .venv
 
-# Activate environment (Windows PowerShell)
-.venv\Scripts\Activate.ps1
+# Activate the environment using the command for your shell:
+# Windows PowerShell: .venv\Scripts\Activate.ps1
+# macOS/Linux: source .venv/bin/activate
 
 # Install required dependencies
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ### 3. Launch Interactive Streamlit Dashboard
 ```bash
-.venv\Scripts\streamlit run dashboard/app.py
+python -m streamlit run dashboard/Overview.py
 ```
 Open your browser at `http://localhost:8501`.
 
@@ -121,3 +136,16 @@ ANOVA OLS fixed-effects model reveals:
 
 ## 📜 License & Citation
 Dataset source: [Kaggle Formula 1 World Championship Dataset (1950–Present)](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020).
+
+
+## Contributing
+
+Try the dashboard, then [open an issue](https://github.com/MOULAYID/Formula-1-World-Championship/issues) with a reproducible bug, a data-quality question, or a suggested analysis. For code changes, explain the intended change and validation in your pull request.
+
+## Follow the project
+
+Star this repository to bookmark it, or [follow @MOULAYID](https://github.com/MOULAYID) for more analytics projects. To receive repository notifications, use GitHub’s **Watch** menu and choose the updates you want.
+
+## Acknowledgments
+
+README navigation, preview, setup, and contribution structure adapted from [Best README Template](https://github.com/othneildrew/Best-README-Template).
